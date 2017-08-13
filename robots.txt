@@ -1,1 +1,1 @@
-Sitemap: http://sites.uni.edu/theron/sitemap.xml
+Sitemap: https://sites.uni.edu/theron/sitemap.xml
