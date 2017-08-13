@@ -1,282 +1,466 @@
-  <!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.5.0 by Michael Rose
+  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Associate Professor of Mathematics">
-    <meta name="author" content="Theron J Hitchman">
-    <!--<link rel="icon" href="../../favicon.ico">-->
 
-    <title>Theron Hitchman</title>
+<!-- begin SEO -->
 
-    <!-- Bootstrap core CSS -->
-    <link href="/theron/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- stylesheet for pygments to work -->
-    <link href="/theron/css/pygments.css" rel="stylesheet">
-    <!-- MathJax -->
-    <script type="text/javascript"
-      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
 
+
+
+
+
+
+
+<title>My Teaching - Theron J Hitchman</title>
+
+
+
+
+<meta name="description" content="Associate Professor of Mathematics, University of Northern Iowa">
+
+
+
+
+<meta name="author" content="Theron J Hitchman">
+
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Theron J Hitchman">
+<meta property="og:title" content="My Teaching">
+
+
+  <link rel="canonical" href="http://sites.uni.edu/theron/teaching/">
+  <meta property="og:url" content="http://sites.uni.edu/theron/teaching/">
+
+
+
+
+
+  <meta name="twitter:site" content="@ProfNoodlearms">
+  <meta name="twitter:title" content="My Teaching">
+  <meta name="twitter:description" content="Associate Professor of Mathematics, University of Northern Iowa">
+  <meta name="twitter:url" content="http://sites.uni.edu/theron/teaching/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="http://sites.uni.edu/theron/assets/images/VertigoFindsYouUnamusing.jpeg">
+    
+  
+
+  
+    <meta name="twitter:creator" content="@Theron J Hitchman">
+  
+
+
+
+  
+
+  
+
+
+
+  <meta property="og:image" content="http://sites.uni.edu/theron/assets/images/BreconBeacons1.jpg">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "http://sites.uni.edu/theron",
+      "logo": "http://sites.uni.edu/theron/assets/images/VertigoFindsYouUnamusing.jpeg"
+    }
+  </script>
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Theron J Hitchman",
+      "url" : "http://sites.uni.edu/theron",
+      "sameAs" : ["https://twitter.com/ProfNoodlearms","https://theronhitchman.wordpress.com"]
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://sites.uni.edu/theron/feed.xml" type="application/atom+xml" rel="alternate" title="Theron J Hitchman Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://sites.uni.edu/theron/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
   </head>
 
-  <body>
+  <body class="layout--single">
 
-<!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/theron/"><strong>TJH</strong></a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav ">
-            <li class="text-right"><a href="/theron/about/">About</a></li>
-            <li class="text-right"><a href="/theron/blog/">Blog</a></li>
-            <li class="hidden-xs"><a>&bull;</a></li>
-            <li class="text-right"><a href="/theron/teaching/">Teaching</a></li>
-            <li class="text-right"><a href="/theron/scholarship/">Scholarship</a></li>
-            <li class="text-right"><a href="/theron/service/">Service</a></li>
-            <li class="hidden-xs"><a>&bull;</a></li>
-            <li class="text-right"><a href="/theron/workshops/">Workshops</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle text-right" data-toggle="dropdown">Links <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li class="dropdown-header text-right">UNI sites</li>
-                <li class="text-right"><a href="http://www.uni.edu">Northern Iowa</a></li>
-                <li class="text-right"><a href="http://www.uni.edu/math">UNI Math</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header text-right">Other Web Sites</li>
-                <li class="text-right"><a href="http://theronhitchman.wordpress.com">Circles and Tangents</a></li>
-                <li class="text-right"><a href="http://theronhitchman.blogspot.com/">Upper Half-Wit</a></li>
-                <li class="text-right"><a href="http://theronhitchman.github.io">My GitHub Projects</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header text-right">Sage Math</li>
-                <li class="text-right"><a href="http://cloud.sagemath.org">SageMathCloud</a></li>
-                <li class="text-right"><a href="http://sagecell.sagemath.org">Single Cell Server</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header text-right">Social Sites</li>
-                <li class="text-right"><a href="https://plus.google.com/u/0/+TheronHitchman/posts">Google Plus</a></li>
-                <li class="text-right"><a href="http://github.com/theronhitchman">GitHub</a></li>
-                <li class="text-right"><a href="https://twitter.com/ProfNoodlearms">Twitter</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="http://sites.uni.edu/theron/">Theron J Hitchman</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item"><a href="http://sites.uni.edu/theron/about/">About</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://sites.uni.edu/theron/teaching/">Teaching</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://sites.uni.edu/theron/research/">Research</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://sites.uni.edu/theron/student-research/">Student Research</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://sites.uni.edu/theron/activities/">Activities</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://sites.uni.edu/theron/links/">Links</a></li>
+          
+        </ul>
+        <button><div class="navicon"></div></button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
     </div>
+  </div>
+</div>
+
+    
+  
 
 
-  <!-- Begin page content -->
-  <div class="container">
-    <div class="jumbotron">
-      <div class="page-header">
-        <h2>Teaching</h2>
-      </div>
-      <hr>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-md-9">
-            <h3 id="my-current-courses">My Current Courses</h3>
-
-<ul>
-  <li>
-    <p>Math 1100 Mathematics in Decision Making</p>
-
-    <p>Math in Decision Making is intended for a general college audience, and
-  satisfies a Liberal Arts Core requirement for graduation. (That’s a <em>thing</em>.)
-  In my version of the course, we study some basic knot theory and Cantor’s
-  remarkable discovery about infinity before moving on to the required probability
-  and statistics unit. I keep a <a href="https://sites.google.com/a/uni.edu/mdm-hitchman/">web page for the course</a> with lots of
-  details.</p>
-  </li>
-</ul>
-
-<!--
-- Math 2500 Linear Algebra (sections 01 and 02)
-
-    Linear algebra is the study of the geometry and algebra of lines, planes, vectors
-    and matrices. It is probably the most complete and useful bit of mathematics
-    that a student learns in college. The major challenges in the course come from
-    steadily rising levels of abstraction.
-
-    In this course, we focus on making good mental models for linear algebraic
-    situations, especially building intuition by connecting geometry and algebra.
-    We shall also focus on the process of making examples and generalizing from them.
-
-    The course web page for linear algebra is [here][linalg].
--->
-
-<ul>
-  <li>
-    <p>Math 3600 Euclidean Geometry</p>
-
-    <p>This course is an introduction (or a re-introduction) to axiomatic
-  mathematical work. We shall study planar geometry, but the focus is on
-  developing a mathematics professional’s skill set. A lot more can be found
-  on the <a href="http://theronhitchman.github.io/euclidean-geometry/">course web page</a>.</p>
-  </li>
-  <li>
-    <p>Math 3630/5630 Differential Geometry</p>
-
-    <p>We take up the classical material on curves and surfaces in space. The main
-  idea is to use Calculus to measure how objects bend, so we end up looking at
-  lots of second derivatives. This is an advanced topics course. The
-  undergraduate and graduate versions of this course share <a href="http://theronhitchman.github.io/differential-geometry/">a web page</a>.</p>
-  </li>
-</ul>
-
-<h3 id="inquiry-based-learning">Inquiry Based Learning</h3>
-
-<p>Mathematics is best learned by doing it yourself. With this in mind,
-I use <em>Inquiry Based Learning</em> or a <em>modified Moore method</em>
-in many of my courses. Most of the focus in class is on each individual student
-(sometimes small groups) making sense of the mathematics on his or her own terms,
-and sharing that progress with the class for critique.</p>
-
-<p>I am an active member of the <a href="http://www.inquirybasedlearning.org/">Academy of Inquiry Based Learning</a>, and currently
-help organize the annual Legacy of RL Moore meeting.</p>
-
-<h3 id="standards-based-assessment">Standards Based Assessment</h3>
-
-<p>In order to facilitate better communication with my students about their progress,
-I am experimenting in some courses with the ideas behind <em>Standards Based
-Assessment and Reporting</em>. The big idea is to focus on the key learning
-goals for the course and orient our work directly at them. This sounds
-simple (and it is), but it has some major consequences for how things are done.
-At this point, I am only working on this in one course (Euclidean Geometry).</p>
-
-<h3 id="mathematical-technology">Mathematical Technology</h3>
-
-<p>The ready availability of computers for doing mathematical work enables mathematicians
-(at all stages of development) to work in new ways. I am a big fan of the free and open
-software movement, and my favorite mathematical software tools are</p>
-
-<ul>
-  <li>The <a href="http://www.sagemath.org">Sage Mathematical Software System</a>,</li>
-  <li><a href="http://www.geogebra.org/">Geogebra</a>, and</li>
-  <li><a href="https://www.python.org/">Python</a>.</li>
-</ul>
-
-<h3 id="past-courses">Past Courses</h3>
-
-<p>I have taught a wide variety of courses. I think this is the complete list.</p>
-
-<table class="table">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name" colspan="2">At University of Northern Iowa:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><em>(Advanced) Euclidean Geometry</em>, <em>Geometric Transformations</em>,
-<em>(Introduction to) Modern Geometries</em>, <em>Mathematical Problem Solving</em>,
-<em>Differential Geometry</em>, <em>Differential Calculus</em>,
-<em>Integral Calculus</em>, <em>Introduction to Statistical Methods</em>,
-<em>The Real Number System</em>, <em>Dynamical Systems: Chaos Theory and Fractals</em>,
-<em>Topics in non-Euclidean Geometry</em>, <em>Combinatorics</em>,
-<em>Mathematics in Decision Making</em>, <em>Linear Algebra</em></td>
-</tr>
-<tr class="field-even field"><th class="field-name" colspan="2">At Williams College:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><em>Linear algebra</em>,
-<em>Discrete Mathematics</em>,
-<em>Geometric ODEs</em></td>
-</tr>
-<tr class="field-odd field"><th class="field-name" colspan="2">At Rice University:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><em>Differential Calculus</em>,
-<em>Integral Calculus</em>,
-<em>Multivariable Calculus</em>,
-<em>Ordinary Differential Equations</em>,
-<em>Introduction to Lie Groups and Lie algebras</em>,
-<em>Introduction to Partial Differential Equations</em></td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="an-award">An Award</h3>
-
-<p>In October 2013, I was honored with the Teaching Award by the Iowa
-Section of the Mathematical Association of America.</p>
 
 
-          </div>
-          <div class="hidden-xs hidden-sm col-md-3">
-            <div>
-  <address>
-    <strong>Theron J Hitchman</strong><br>
-    Department of Mathematics 0506<br>
-    University of Nothern Iowa<br>
-    Cedar Falls, IA 50613-0506<br>
-  </address>
-  <address>
-    <strong>Other Contact Information</strong><br>
-    Office: 327 Wright Hall<br>
-    Phone: 319-273-2646<br>
-    email: <a href="mailto:theron.hitchman@uni.edu">theron.hitchman@uni.edu</a>
-  </address>
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('http://sites.uni.edu/theron/assets/images/BreconBeacons1.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 class="page__title" itemprop="headline">
+        
+          My Teaching
+
+        
+      </h1>
+      
+      
+      
+    </div>
+  
+  
+    <span class="page__hero-caption">Brecon Beacons, Wales, 2014
+</span>
+  
 </div>
 
 
-            <dl>
-  <dt>TJH Online</dt>
-  <dd><ul>
-    <li><a href="https://plus.google.com/u/0/+TheronHitchman/posts">Google Plus</a></li>
-    <li><a href="http://theronhitchman.github.io">GitHub page</a></li>
-    <li><a href="https://twitter.com/ProfNoodlearms">Twitter</a></li>
-    <li><a href="/theron/">Professional Page</a></li>
-    <li><a href="http://theronhitchman.wordpress.com">Circles and Tangents</a></li>
-    <li><a href="http://theronhitchman.blogspot.com/">Upper Half-Wit</a></li>
-  </ul></dd>
 
-  <dt>My Employer</dt>
-  <dd><ul>
-    <li><a href="http://www.uni.edu">University of Northern Iowa</a></li>
-    <li><a href="http://www.uni.edu/chas/">UNI CHAS</a></li>
-    <li><a href="http://www.uni.edu/math">UNI Math</a></li>
-  </ul></dd>
 
-  <dt>Professional Stuff</dt>
-  <dd><ul>
-    <li><a href="http://www.inquirybasedlearning.org/">Academy of Inquiry Based Learning</a></li>
-    <li><a href="http://www.sagemath.org">Sage Math</a></li>
-    <li><a href="https://www.python.org/">Python</a></li>
-    <li><a href="http://www.geogebra.org/">GeoGebra</a></li>
-    <li><a href="http://git-scm.com/">Git</a> and <a href="https://github.com/">GitHub</a></li>
-    <li><a href="http://www.latex-project.org/">LaTeX</a></li>
-  </ul></dd>
 
-</dl>
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
 
-          </div>
-        </div>
-      </div>
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="http://sites.uni.edu/theron/assets/images/Hitchman.jpg" class="author__avatar" alt="Theron J Hitchman" itemprop="image">
+      
     </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">Theron J Hitchman</h3>
+    
+      <p class="author__bio" itemprop="description">
+        Associate Professor of Mathematics<br />University of Northern Iowa
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Cedar Falls, IA</span>
+        </li>
+      
+
+      
+        <li>
+          <a href="https://sites.uni.edu/theron" itemprop="url">
+            <i class="fa fa-fw fa-chain" aria-hidden="true"></i> Website
+          </a>
+        </li>
+      
+
+      
+        <li>
+          <a href="mailto:theron.hitchman@uni.edu">
+            <meta itemprop="email" content="theron.hitchman@uni.edu" />
+            <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="https://twitter.com/ProfNoodlearms" itemprop="sameAs">
+            <i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/theronhitchman" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <li>
+  <a href="https://theronhitchman.wordpress.com">
+    <i class="fa fa-fw fa-wordpress" aria-hidden="true"></i> Circles & Tangents
+  </a>
+</li>
+
+    </ul>
+  </div>
+</div>
+
+  
   </div>
 
 
-  <div class="container">
-    <hr />
-    <div class="text-muted col-xs-9 col-md-8">Built
-      with <a href="http://jekyllrb.com">Jekyll</a> and
-      <a href="http://getbootstrap.com/">Bootstrap</a>.<br class="visible-sm visible-xs">
-      Contents licensed CC-BY 4.0 Theron Hitchman, 2008-2015.</div>
-      <div class="text-muted col-xs-3 col-md-4"><span class="pull-right"><small>Modified: 2016-02-08 13:28:07 -0600</small></span></div>
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="My Teaching">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        <h2>For Current Students</h2>
+
+<p>This term, my formal teaching assignment is:</p>
+
+<p><a href="/la17/" class="btn btn--large btn--info">Linear Algebra for Applications</a>
+<a href="/de17/" class="btn btn--large btn--warning">Ordinary Differential Equations</a>
+<a href="/eg17/" class="btn btn--large btn--success">Euclidean Geometry</a></p>
+
+<p>Students in those courses should follow the links in those buttons above.</p>
+
+<h3>About Office Hours:</h3>
+<p>Office Hours for Fall 2017 are Monday, Tuesday, Thursday, and Friday from
+3-5pm. These can get a little busy, and sometimes I have <i>other meetings</i>,
+so I like to have students book appointments
+in advance if possible. To book an appointment, use the service here:</p>
+
+<p><a href="https://theronhitchman.youcanbook.me/" class="btn btn--large btn--danger text-center">Book an Appointment</a></p>
+
+<p><strong>Note:</strong> An appointment is NOT required. During the late
+afternoons, if I am in my office and the door is open, I welcome your visit.</p>
+
+<p>If the late afternoon won’t work for you, please get in touch with me by email,
+and we can work something out.</p>
+
+<hr />
+
+<h2>Past Courses</h2>
+
+<p>I have taught many different courses! I tried to get them all onto this list.</p>
+
+<h3>At UNI</h3>
+
+<p>(Advanced) Euclidean Geometry, Geometric Transformations, (Introduction to) Modern Geometries, Mathematical Problem Solving, Differential Geometry, Differential Calculus, Integral Calculus, Introduction to Statistical Methods, The Real Number System, Dynamical Systems: Chaos Theory and Fractals, Topics in non-Euclidean Geometry, Combinatorics, Mathematics in Decision Making, Linear Algebra, Ordinary Differential Equations,
+  Topics in Topology: Knot Theory, Senior Seminar</p>
+
+<h3>At Williams College</h3>
+
+<p>Linear algebra, Discrete Mathematics, Geometric ODEs</p>
+
+<h3>At Rice University</h3>
+
+<p>Differential Calculus, Integral Calculus, Multivariable Calculus, Ordinary Differential Equations, Introduction to Lie Groups and Lie algebras, Introduction to Partial Differential Equations</p>
+
+<h3>At University of Michigan</h3>
+
+<p>Functions Modeling Change, Differential Calculus, Integral Calculus</p>
+
+<hr />
+<h2>An Award</h2>
+
+<p>In 2013, I was honored to receive the Teaching Award from the Iowa Section of
+the Mathematical Association of America.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
 </div>
 
 
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="/theron/js/bootstrap.min.js"></script>
-</body>
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+      <li><a href="https://twitter.com/ProfNoodlearms"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
+    
+    
+      <li><a href="http://github.com/theronhitchman"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="http://sites.uni.edu/theron/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2017 Theron J Hitchman. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://sites.uni.edu/theron/assets/js/main.min.js"></script>
+
+
+
+
+
+  </body>
 </html>
-
